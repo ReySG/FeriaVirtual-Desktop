@@ -18,7 +18,6 @@ import { ClientesDetailComponent } from './pages/clientes/clientes-detail/client
 import { DetalleVentasComponent } from './pages/clientes/detalle-ventas/detalle-ventas.component';
 import { PaginatorComponent } from './pages/paginator/paginator.component';
 import { UsuariosDetailComponent } from './pages/usuarios/usuarios-detail/usuarios-detail.component';
-import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { UsuariosFormComponent } from './pages/usuarios/usuarios-form/usuarios-form.component';
 import { MultiSelectModule } from 'primeng/multiselect';
@@ -34,7 +33,6 @@ import {BadgeModule} from 'primeng/badge';
 import {MenubarModule} from 'primeng/menubar';
 import {TabMenuModule} from 'primeng/tabmenu';
 import { ConctactoComponent } from './pages/conctacto/conctacto.component';
-import { TutorialCompraComponent } from './pages/tutorial-compra/tutorial-compra.component';
 import { YouTubePlayerModule } from "@angular/youtube-player";
 import { SolicitudComponent } from './pages/solicitud/solicitud.component';
 import { AgmCoreModule } from '@agm/core';
@@ -68,11 +66,9 @@ import { ProductosFormComponent } from './pages/productores/productos-form/produ
     DetalleVentasComponent,
     PaginatorComponent,
     UsuariosDetailComponent,
-    HomeComponent,
     NavbarComponent,
     UsuariosFormComponent,
     ConctactoComponent,
-    TutorialCompraComponent,
     SolicitudComponent,
     FooterComponent,
     ProcesoVentaComponent,
