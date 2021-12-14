@@ -36,12 +36,12 @@ export class UsuariosFormComponent implements OnInit {
       this.cargarRoles();
 
 
-    // this.usuarioService
-    //   .getRoles()
-    //   .subscribe((data: any) => {
-    //     this.roles = data;
-    //     console.log(data);
-    //   });
+    this.usuarioService
+      .getRoles()
+      .subscribe((data: any) => {
+        this.roles = data;
+        console.log(data);
+      });
   }
 
   get nombreNotValid() {
@@ -73,13 +73,15 @@ export class UsuariosFormComponent implements OnInit {
       })
       .filter(v => v !== null);
 
-    console.log("rol seleccionado:", selectedRoles)
+    console.log("roles seleccionado:", selectedRoles)
+    console.log("rol seleccionado:", this.registerForm.value.roles)
 
+    this.usuario.roles = selectedRoles
     this.usuario = new Usuario();
     this.usuario = this.data;
-    
+
     console.log("Data: ", this.data);
-    this.usuario.roles = selectedRoles;
+    // this.usuario.roles = selectedRoles;
 
     this.create();
 

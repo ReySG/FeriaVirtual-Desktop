@@ -21,10 +21,7 @@
           <span class="icon"><i class="fas fa-users"></i></span>
           <span class="item">Clientes</span>
         </a></li>
-      <!-- <li><a routerLink="/comerciantes" *ngIf="authService.hasRole('ROLE_ADMIN')">
-          <span class="icon"><i class="fas fa-handshake"></i></span>
-          <span class="item">Comerciantes</span>
-        </a></li> -->
+
       <li><a routerLink="/usuarios" *ngIf="authService.hasRole('ROLE_ADMIN')">
           <span class="icon"><i class="fas fa-user"></i></span>
           <span class="item">Usuarios</span>
@@ -33,16 +30,7 @@
           <span class="icon"><i class="fas fa-file-invoice"></i></span>
           <span class="item">Solicitudes de compra</span>
         </a></li>
-      <li><a routerLink="/proceso-venta" *ngIf="authService.hasRole('ROLE_ADMIN')">
-          <span class="icon"><i class="fas fa-file-invoice"></i></span>
-          <span class="item">Procesos de venta</span>
-        </a></li>
-      <li><a routerLink="/productos" *ngIf="authService.hasRole('ROLE_PRODUCTOR')">
-          <span class="item">Productos</span>
-        </a></li>
-      <li><a routerLink="/solicitud" *ngIf="authService.hasRole('ROLE_CLIENTE_EXTERNO')">
-          <span class="item">Crear Solicitud</span>
-        </a></li>
+
       <button (click)="logout()" class="dropdown-item" type="submit">Log Out</button>
     </ul>
   </div>
